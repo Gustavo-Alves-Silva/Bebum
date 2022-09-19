@@ -13,6 +13,7 @@ main{
     max-width: 1280px;
     margin: 0 auto;
     flex: 1 0 auto;
+    padding-bottom: 100px;
 }
 
 .navPrincipal {
@@ -54,7 +55,7 @@ main{
 .rodape{
     width: 100%;
     background: black;
-    position: absolute;
+    position: fixed
     bottom: 0;
     padding: 25px 0;
 }
@@ -80,9 +81,77 @@ span{
 
 .carrousel ul{
     list-style: none;
+    text-align: center;
 }
 
 .carrousel{
     text-align: center;
     list-style: none;
+    margin-right: 500px;
+}
+
+/* componente destaque */
+.destaque {
+    display: inline-block;
+    position: relative;
+    width: 340px;
+    height: 530px;
+    text-align: center;
+    background-color: coral;
+    border: 2px solid brown;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 7px 10px 31px -4px rgba(0,0,0,0.69);
+    margin: 0 7px;
+}
+.destaque img {
+    max-width: 100%;
+}
+.destaque h2{
+    font-size: 18px;
+    font-family: 'sans-serif';
+    color: white;
+
+}
+.destaque .valor{
+    font-size: 20px;
+    color: beige;
+    font-family: 'sans-serif';
+    font-weight: 300
+    text-transform: uppercase;
+}
+.destaque .adicionaraocarrinho {
+    display: block;
+    position: absolute;
+    width: 164px;
+    height: 40px;
+    padding: 15px 0;
+    background-color: bisque;
+    left: 90px;
+    bottom: 10px ;
+    color: rgb(136, 111, 70);
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.5;
+}
+.destaque .adicionaraocarrinho:hover{
+    background: red;
+    color: orange;
+    transition: all 0.5;
+}
+.destaque .imagem {
+    height: 200px;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+}
+.destaque .valora .aariscado{
+    font-size: 14px;
+    color: blue;
+    display: block;
+    text-decoration:  line-through;
+}
+.destaque .valor small{
+    color: aqua;
 }
